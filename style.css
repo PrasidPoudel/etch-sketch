@@ -1,0 +1,19 @@
+.container-1 {
+    display: flex;
+    flex-wrap:wrap;
+    height: 500px;
+    width: 700px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 30%;
+    margin-top: 10%;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.size {
+    margin-left: 50%;
+}
+.top {
+    text-align: center;
+}
