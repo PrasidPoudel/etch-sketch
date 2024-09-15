@@ -5,7 +5,7 @@ const dark=document.querySelector('.darkening');
 const eraser=document.querySelector('.eraser');
 const reset=document.querySelector('.reset');
 reset.addEventListener('click',function () {//This function change background color of every div to white by iterating every one of them
-    const divs=document.querySelectorAll('div');
+    const divs=document.querySelectorAll('.prasid');
     divs.forEach(div => {
         div.style.backgroundColor='white';
     }
@@ -17,13 +17,14 @@ function creatediv(pixelsize) {//This function create the divs both horizontally
         for(let j=0;j<pixelsize;j++) {
            let boxes=document.createElement('div');
             boxes.classList.add("prasid");
-            boxes.style.height=650/pixelsize+'px';
-            boxes.style.width=850/pixelsize+'px'
+            boxes.style.flex='1 0 auto'
+            boxes.style.height=`${650/pixelsize}px`;
+            boxes.style.width=`${900/pixelsize}px`;
                     boxes.addEventListener('mouseenter',()=> {
-                    boxes.style.backgroundColor=`rgb(${0},${0},${0})`;
-                    boxesstyle.opacity=0.1;
+                    boxes.style.backgroundColor=`black`;
                     })
             main.appendChild(boxes);
+            console.log(boxes)
         }
     }
 }
@@ -37,7 +38,6 @@ function setgrid() {//This function resize the grid if clicked on setup size
     }while(etch>=100);
     creatediv(etch);
 }
-creatediv(16);//Initial Condidtion
 eraser.addEventListener('click',()=>{//This erase the color on a hovering div by setting their color to white
     const bins=document.querySelectorAll('.prasid');
     bins.forEach(bin=> {
@@ -65,3 +65,4 @@ eraser.addEventListener('click',()=>{//This erase the color on a hovering div by
             })
         })
     })
+    creatediv(16);//Initial Condidtion
