@@ -1,3 +1,4 @@
+
 const pen=document.querySelector('.pencil');
 const main=document.querySelector('.container-1');
 const size=document.querySelector('.size');
@@ -17,9 +18,10 @@ function creatediv(pixelsize) {//This function create the divs both horizontally
         for(let j=0;j<pixelsize;j++) {
            let boxes=document.createElement('div');
             boxes.classList.add("prasid");
-            boxes.style.flex='1 0 auto'
-            boxes.style.height=`${650/pixelsize}px`;
+            boxes.style.height=`${550/pixelsize}px`;
             boxes.style.width=`${900/pixelsize}px`;
+            boxes.style.flex=`4 4 auto` 
+            boxes.style.marginBottom='0'
                     boxes.addEventListener('mouseenter',()=> {
                     boxes.style.backgroundColor=`black`;
                     })
