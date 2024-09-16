@@ -1,16 +1,17 @@
+
 .container-1 {
     display: flex;
     flex-wrap:wrap;
-    height: 650px;
+    height: 550px;
     width: 900px;
-    border-width: 4px;
     border-style: solid;
     border-radius: 6px;
     border-color: black;
+    margin: 0;
+    padding: 0;
     margin-top: 50px;
     margin-right: 90px;
     background-color: white;
-    gap: 0px;
 }
 
 .top {
@@ -60,6 +61,8 @@ button {
 }
 body {
     background-color: yellow;
+    margin: 0;
+    padding: 0;
 }
 .size:hover {
     background-color: brown;
