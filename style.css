@@ -2,27 +2,25 @@
 .container-1 {
     display: flex;
     flex-wrap:wrap;
-    height: 550px;
-    width: 900px;
+    height: 500px;
+    width: 600px;
     border-style: solid;
     border-radius: 6px;
     border-color: black;
     margin: 0;
     padding: 0;
-    margin-top: 50px;
-    margin-right: 90px;
-    background-color: white;
+    margin-right: 120px;
+    background-color: rgb(252, 238, 238);
 }
 
 .top {
     text-align: center;
 }
-.container {
+.contain {
     display: flex;
 }
-.container div {
+.contain div {
     flex: 1;
-    gap: 50px;
 }
 .content {
     display: block;
@@ -50,14 +48,6 @@ button {
     background-color: black;
     color: white;
     font-size: 18px;
-}
-.i-hate-it {
-    display: flex;
-    flex-wrap: wrap;
-}
-.i-hate-it div {
-    flex: 1;
-    gap: 0px;
 }
 body {
     background-color: yellow;

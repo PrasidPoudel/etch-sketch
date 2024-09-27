@@ -18,10 +18,9 @@ function creatediv(pixelsize) {//This function create the divs both horizontally
         for(let j=0;j<pixelsize;j++) {
            let boxes=document.createElement('div');
             boxes.classList.add("prasid");
-            boxes.style.height=`${550/pixelsize}px`;
-            boxes.style.width=`${900/pixelsize}px`;
-            boxes.style.flex=`4 4 auto` 
-            boxes.style.marginBottom='0'
+            boxes.style.height=`${500/pixelsize}px`;
+            boxes.style.width=`${600/pixelsize}px`;
+            boxes.style.flex=`0 1 auto`
                     boxes.addEventListener('mouseenter',()=> {
                     boxes.style.backgroundColor=`black`;
                     })
@@ -37,7 +36,7 @@ function setgrid() {//This function resize the grid if clicked on setup size
     }
     do {
        etch= Number(prompt('no of grid'));
-    }while(etch>=100);
+    }while(etch>=100)
     creatediv(etch);
 }
 eraser.addEventListener('click',()=>{//This erase the color on a hovering div by setting their color to white
